@@ -1,4 +1,4 @@
-REACT_APP_API = https://late-beers-shine.loca.lt/
+REACT_APP_API = https://api.itdreamcareer.io.vn/
 REACT_APP_API_MEDIA = https://media-elms.itz.io.vn/
 REACT_APP_API_AVATAR = https://sso-api-vbook.itz.io.vn/
 REACT_APP_PORTAL_VIDEO = https://portal-vbook.itz.io.vn/

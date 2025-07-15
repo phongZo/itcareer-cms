@@ -19,6 +19,104 @@ export const navMenuConfig = [
                 path: routes.adminListPage.path,
                 permission: apiConfig.account.getList.permissionCode,
             },
+            {
+                label: <FormattedMessage defaultMessage="Nhân viên" />,
+                key: 'employee',
+                path: routes.employeeListPage.path,
+                permission: apiConfig.employee.getList.permissionCode,
+            },
+            {
+                label: <FormattedMessage defaultMessage="Phòng ban" />,
+                key: 'department',
+                path: routes.departmentListPage.path,
+                permission: [apiConfig.department.getList.permissionCode],
+            },
+        ],
+    },
+    {
+        label: <FormattedMessage defaultMessage="Quản lý danh bạ" />,
+        key: 'quan-ly-danh-ba',
+        icon: <ContactsOutlined size={16} />,
+        children: [
+            {
+                label: <FormattedMessage defaultMessage="Danh bạ" />,
+                key: 'contacts',
+                path: routes.contactsListPage.path,
+                permission: apiConfig.contacts.getList.permissionCode,
+            },
+            {
+                label: <FormattedMessage defaultMessage="Thẻ" />,
+                key: 'contact-tag',
+                path: routes.contactTagListPage.path,
+                permission: [apiConfig.tag.getList.permissionCode],
+            },
+        ],
+    },
+    {
+        label: <FormattedMessage defaultMessage="Quản lý liên lạc" />,
+        key: 'quan-ly-lien-lac',
+        icon: <PhoneOutlined size={16} />,
+        permission: [
+            apiConfig.phoneCall.admin.getList.permissionCode,
+            apiConfig.phoneCall.employee.getList.permissionCode,
+        ],
+        children: [
+            {
+                label: <FormattedMessage defaultMessage="Cuộc gọi" />,
+                key: 'phone-call',
+                path: routes.phoneCallListPage.path,
+                permission: [
+                    apiConfig.phoneCall.admin.getList.permissionCode,
+                    apiConfig.phoneCall.employee.getList.permissionCode,
+                ],
+            },
+            {
+                label: <FormattedMessage defaultMessage="Tin nhắn" />,
+                key: 'message',
+                path: routes.messageListPage.path,
+                permission: [
+                    apiConfig.message.getList.permissionCode,
+                    apiConfig.message.getListForClient.permissionCode,
+                ],
+            },
+            {
+                label: <FormattedMessage defaultMessage="Thẻ" />,
+                key: 'phone-call-message-tag',
+                path: routes.phoneCallTagListPage.path,
+                permission: [apiConfig.tag.getList.permissionCode],
+            },
+        ],
+    },
+    {
+        label: <FormattedMessage defaultMessage="Quản lý thiết bị" />,
+        key: 'quan-ly-thiet-bi',
+        icon: <IconDevices size={16} />,
+        permission: [apiConfig.device.getListForAdmin.permissionCode],
+        children: [
+            {
+                label: <FormattedMessage defaultMessage="Danh sách thiết bị" />,
+                key: 'device',
+                path: routes.deviceListPage.path,
+                permission: apiConfig.device.getListForClient.permissionCode,
+            },
+            {
+                label: <FormattedMessage defaultMessage="Danh mục thương hiệu" />,
+                key: 'brand',
+                path: routes.brandListPage.path,
+                permission: apiConfig.category.getList.permissionCode,
+            },
+            {
+                label: <FormattedMessage defaultMessage="Danh mục thiết bị" />,
+                key: 'device-category',
+                path: routes.deviceCatalogListPage.path,
+                permission: apiConfig.category.getList.permissionCode,
+            },
+            {
+                label: <FormattedMessage defaultMessage="Danh sách lịch sử chi phí sửa thiết bị" />,
+                key: 'device-history-cost',
+                path: routes.deviceHistoryCostListAllPage.path,
+                permission: apiConfig.deviceHistoryCost.getList.permissionCode,
+            },
         ],
     },
     {

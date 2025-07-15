@@ -54,10 +54,9 @@ const LoginPage = () => {
 
     const onFinish = (values) => {
         const payload = {
-            //username: values.username,
-            email: values.username,
+            username: values.username,
             password: values.password,
-            grant_type:'user',
+            grant_type: 'password',
         };
 
         execute({

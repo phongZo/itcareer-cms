@@ -11,7 +11,17 @@ import PermissionSavePage from '@modules/groupPermission/PermissionSavePage';
 import SettingListPage from '@modules/listSetting';
 import SettingSavePage from '@modules/listSetting/SettingSavePage';
 import settingsRoutes from '@modules/settings/routes';
+import contactsRoutes from '@modules/contacts/routes';
+import employeeRoutes from '@modules/employee/routes';
+import phoneCallRoutes from '@modules/phoneCall/routes';
+import deviceRoutes from '@modules/devices/routes';
 import adminRoutes from '@modules/admin/routes';
+import brandRoutes from '@modules/brands/routes';
+import messageRoutes from '@modules/message/routes';
+import tagRoutes from '@modules/tag/routes';
+import departmentRoutes from '@modules/department/routes';
+import deviceCatalogRoutes from '@modules/deviceCatalog/routes';
+import deviceHistoryRoutes from '@modules/deviceHistoryCost/routes';
 /*
 	auth
 		+ null: access login and not login
@@ -77,7 +87,17 @@ const routes = {
     ...newsRoutes,
     ...nationRoutes,
     ...settingsRoutes,
+    ...contactsRoutes,
+    ...employeeRoutes,
+    ...phoneCallRoutes,
+    ...deviceRoutes,
     ...adminRoutes,
+    ...brandRoutes,
+    ...messageRoutes,
+    ...tagRoutes,
+    ...departmentRoutes,
+    ...deviceCatalogRoutes,
+    ...deviceHistoryRoutes,
     // keep this at last
     notFound: {
         component: PageNotFound,
