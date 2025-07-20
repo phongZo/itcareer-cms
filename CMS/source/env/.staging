@@ -1,0 +1,12 @@
+REACT_APP_API = https://elms-auth.developteam.net/
+REACT_APP_API_MEDIA = https://org-media-template.developteam.net/
+REACT_APP_ENV = dev
+REACT_APP_API_TENANT = https://elms-tenant-api.developteam.net/
+REACT_APP_PORTAL_VIDEO = https://vbook.thsolution.net/
+GENERATE_SOURCEMAP = false
+CI = false
+IMAGE_INLINE_SIZE_LIMIT = 0
+REACT_APP_ENABLE_EXPOSURE = true
+REACT_APP_WEB_SOCKET_URL = wss://elms-noti.developteam.net/ws
+REACT_APP_NAME = cms-elms-app
+REACT_APP_TYPE = cms
